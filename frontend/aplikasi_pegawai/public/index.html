@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Manajemen Pegawai</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>DAFTAR NAMA PEGAWAI:</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>NIP</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Tanggal Lahir</th>
+            <th>Nama Ruangan</th>
+            <th>Pilihan</th>
+          </tr>
+        </thead>
+        <tbody id="employeeTableBody">
+          <!-- Data pegawai akan ditampilkan di sini -->
+        </tbody>
+      </table>
+
+      <h3>INPUT DAN EDIT NAMA PEGAWAI</h3>
+      <form id="employeeForm">
+        <input type="hidden" id="employeeIndex" value="" />
+        <label for="name">Nama:</label>
+        <input type="text" id="name" required />
+        <label for="address">Alamat:</label>
+        <input type="text" id="address" required />
+        <label for="dob">Tanggal Lahir:</label>
+        <input type="date" id="dob" required />
+        <label for="room">Nama Ruang:</label>
+        <select id="room" required>
+          <option value="">-Pilih data-</option>
+          <option value="Ruang 1">Ruang 1</option>
+          <option value="Ruang 2">Ruang 2</option>
+          <option value="Ruang 3">Ruang 3</option>
+        </select>
+        <button type="submit">Simpan</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
